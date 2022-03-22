@@ -1,5 +1,3 @@
-### Recording
-
 ### Stats
 
 Count events for the specified process:
@@ -19,6 +17,12 @@ Profile by CPU for docker container
 Profile by cache-misses
 
     perf record -e L1-dcache-load-misses -c 10000 -g -p <PID> -- sleep 5
+
+### Report
+
+Show data with stacktraces:
+
+    perf report -n --stdio
 
 ### Events
 
