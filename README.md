@@ -1,3 +1,5 @@
+# perf
+
 ### Stats
 
 Count events for the specified process:
@@ -43,7 +45,7 @@ Add a tracepoint for the kernel tcp_sendmsg() function entry ("--add" is optiona
 ### Cache profiling
 
 Record cacheline events (Linux 4.10+):
-    
+
     perf c2c record -a -- sleep 10
 
 Report cacheline events from previous recording (Linux 4.10+):
